@@ -10,10 +10,8 @@ class Movie {
 
 }
 
-$movie1 = new Movie();
-
-
 // movie 1
+$movie1 = new Movie();
 $movie1->title = 'Pirates of Silicon Valley';
 $movie1->actors = ' Noah Wyle: Steve Jobs, Anthony Michael Hall: Bill Gates,
                   Joey Slotnick: Steve Wozniak, Josh Hopkins: Paul Allen';
