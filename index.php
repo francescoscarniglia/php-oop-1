@@ -8,26 +8,32 @@ class Movie {
   public $genre;
   public $year;
 
+  // COSTRUCTOR
+  public function __construct($_title, $_actors, $_director, $_genre, $_year){
+    $this->title = $_title;
+    $this->actors = $_actors;
+    $this->director = $_director;
+    $this->genre = $_genre;
+    $this->year = $_year;
+  }
 }
 
 // movie 1
-$movie1 = new Movie();
-$movie1->title = 'Pirates of Silicon Valley';
-$movie1->actors = ' Noah Wyle: Steve Jobs, Anthony Michael Hall: Bill Gates,
-                  Joey Slotnick: Steve Wozniak, Josh Hopkins: Paul Allen';
-$movie1->director = 'Martyn Buke';
-$movie1->genre = 'Tech';
-$movie1->year = '1999';
+$movie1 = new Movie('Pirates of Silicon Valley', 'Noah Wyle: Steve Jobs, Anthony Michael Hall: Bill Gates,
+                  Joey Slotnick: Steve Wozniak, Josh Hopkins: Paul Allen','Martyn Buke','Tech', '1999');
+
 
 //  movie 2
-$movie2 = new Movie();
-$movie2->title = 'The Social Network';
-$movie2->actors = 'Jesse Eisenberg ,Andrew Garfield,
-                  Justin Timberlake, Armie Hammer,
-                  Max Minghella';
-$movie2->director= 'Aaron Sorkin';
-$movie2->genre = 'Tech';
-$movie2->year ='2010';
+$movie2 = new Movie('The Social Network', 'Jesse Eisenberg ,Andrew Garfield,
+                   Justin Timberlake, Armie Hammer,
+                   Max Minghella', 'Aaron Sorkin', 'Tech', '1999');
+// $movie2->title = 'The Social Network';
+// $movie2->actors = 'Jesse Eisenberg ,Andrew Garfield,
+//                   Justin Timberlake, Armie Hammer,
+//                   Max Minghella';
+// $movie2->director= 'Aaron Sorkin';
+// $movie2->genre = 'Tech';
+// $movie2->year ='2010';
 
 // var_dump($movie1);
 // var_dump($movie2);
